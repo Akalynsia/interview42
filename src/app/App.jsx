@@ -88,24 +88,22 @@ export default function App() {
         <tbody>
           {records.map((record, index) => (
             <tr key={index}>
-              <td className="border p-2 text-center flex justify-between">
-                {record["Record No"]}
-              </td>
+              <td className="border p-2 text-center">{record["Record No"]}</td>
               {columns.map((column, idx) => (
                 <td key={idx} className="border p-2">
                   {record[column] || "-"}
                 </td>
               ))}
-              <td className="border p-2 text-center">
+              <td className="border p-2 text-center flex">
                 <button
                   onClick={() => editRecord(index)}
-                  className="bg-green-500 text-white px-2 py-1 mr-2 rounded w-[40px] h-[40px]"
+                  className="bg-green-500 text-white px-2 py-1 rounded"
                 >
                   ✏️
                 </button>
                 <button
                   onClick={() => deleteRecord(index)}
-                  className="bg-red-500 text-white px-2 py-1 rounded w-[40px] h-[40px]"
+                  className="bg-red-500 text-white px-2 py-1 rounded"
                 >
                   🗑️
                 </button>
