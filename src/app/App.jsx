@@ -88,7 +88,9 @@ export default function App() {
         <tbody>
           {records.map((record, index) => (
             <tr key={index}>
-              <td className="border p-2 text-center">{record["Record No"]}</td>
+              <td className="border p-2 text-center flex justify-between">
+                {record["Record No"]}
+              </td>
               {columns.map((column, idx) => (
                 <td key={idx} className="border p-2">
                   {record[column] || "-"}
