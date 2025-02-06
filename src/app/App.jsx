@@ -99,13 +99,13 @@ export default function App() {
               <td className="border p-2 text-center">
                 <button
                   onClick={() => editRecord(index)}
-                  className="bg-green-500 text-white px-2 py-1 mr-2 rounded"
+                  className="bg-green-500 text-white px-2 py-1 mr-2 rounded w-[40px] h-[40px]"
                 >
                   ✏️
                 </button>
                 <button
                   onClick={() => deleteRecord(index)}
-                  className="bg-red-500 text-white px-2 py-1 rounded"
+                  className="bg-red-500 text-white px-2 py-1 rounded w-[40px] h-[40px]"
                 >
                   🗑️
                 </button>
